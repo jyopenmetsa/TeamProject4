@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Python Flask Bucket List App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+</head>
+ 
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <h3 class="navbar-brand">Address Formatter</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Country Specific Search</h1><br>
+            <form action="{{ form_action_url }}" method="post">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="US">
+                    <label class="form-check-label" for="US">USA</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="Name" name="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="address1" name="address1" placeholder="Street/Building/Address Line1">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="address2" name="address2" placeholder="Apt/Suite/Address Line2">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="state" name="state" placeholder="Zone/Province/State">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="city" name="city" placeholder="City/Town/Locality">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="code" name="code" placeholder="Zip/Postal Code">
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+ 
+        <footer class="footer">
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
