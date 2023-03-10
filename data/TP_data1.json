@@ -634,7 +634,7 @@
                         "Country": "India",
                         "State": " West Bengal",
                         "Address1": "c/o Late Esmail Bagani, Y/2/122, Satghara Road",
-                        "Address2": "PO- Badartala,  PS \u00e2\u20ac\u201c Nadial",
+                        "Address2": "PO- Badartala,Nadial",
                         "City": " Kolkata",
                         "ZipCode": "700044",
                         "First_Name": "Joanna",
@@ -642,7 +642,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Andhra Pradesh",
+                        "State": "Andhra Pradesh",
                         "Address1": "Madhura Nagar",
                         "Address2": " Ameerpet",
                         "City": "Hyderabad",
@@ -652,7 +652,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Delhi",
+                        "State": "Delhi",
                         "Address1": "404, 3",
                         "Address2": " Rohit House,  Tolstoy Marg,  Connaught Place",
                         "City": "Delhi",
@@ -662,7 +662,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Delhi",
+                        "State": "Delhi",
                         "Address1": "1593,  Hardhayan Singh Road",
                         "Address2": " Karol Bagh",
                         "City": "Delhi",
@@ -672,7 +672,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Delhi",
+                        "State": "Delhi",
                         "Address1": "47 2nd Floor,  Subzi Market",
                         "Address2": " Hauz Qazi Chowk",
                         "City": "Delhi",
@@ -682,7 +682,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Delhi",
+                        "State": "Delhi",
                         "Address1": "1,  Dda Market",
                         "Address2": " Shakti Nagar Extn",
                         "City": "Delhi",
@@ -692,7 +692,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Delhi",
+                        "State": "Delhi",
                         "Address1": "Mcf 5409,  Main Road",
                         "Address2": " Faridabad,  Faridabad",
                         "City": "Delhi",
@@ -702,7 +702,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Delhi",
+                        "State": "Delhi",
                         "Address1": "Shop No 1,  Abhay Singh Market",
                         "Address2": " Gurgaon,  Gurgaon",
                         "City": "Delhi",
@@ -712,7 +712,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Karnataka",
+                        "State": "Karnataka",
                         "Address1": " 8th A Main",
                         "Address2": " Srinagar",
                         "City": "Bangalore",
@@ -722,7 +722,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Karnataka",
+                        "State": "Karnataka",
                         "Address1": "29/1,  Bhagavthi Nivas",
                         "Address2": " Police Road,  A S Char Street",
                         "City": "Bangalore",
@@ -732,7 +732,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Karnataka",
+                        "State": "Karnataka",
                         "Address1": "F2,  Balaji Cplx,  F2",
                         "Address2": "balajicplx, sltptblr-53,  Sultanpet",
                         "City": "Bangalore",
@@ -742,7 +742,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "199,  Gopal Bhavan",
                         "Address2": " Princess Street,  Kalbadevi",
                         "City": "Mumbai",
@@ -752,7 +752,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Conractor Bldg,  Raja Ram Mohan Roy Marg",
                         "Address2": " Opp.canara Bank,  C.p.tank",
                         "City": "Mumbai",
@@ -762,7 +762,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "R R Shravika Ashram,  Jubliee Baugh",
                         "Address2": " Dadaji Road,  Opp Navjeev Society,  Lamington Road",
                         "City": "Mumbai",
@@ -772,7 +772,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "254,  Iron Mkt",
                         "Address2": " Santtukaram Road,  Masjid Bunder (east)",
                         "City": "Mumbai",
@@ -782,7 +782,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "17/18,  Harganga Mahal",
                         "Address2": " Tilak Road,  Tilak Bridge Corner,  Dadar(e)",
                         "City": "Mumbai",
@@ -792,7 +792,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Shop No 4,  Adamji Pirbhai Chawl",
                         "Address2": " Sion Bandra Link Rd,  Near Ashok Mill Compound,  Dharavi",
                         "City": "Mumbai",
@@ -802,7 +802,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "317 Tulsiani Chambers,  212 Backbay Reclamation",
                         "Address2": " Yogakshema (nariman Point)",
                         "City": "Mumbai",
@@ -812,7 +812,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Regional Head Quarter,  Galphadevi Temple Ro Worli Colony P.o",
                         "Address2": " Prabhadevi",
                         "City": "Mumbai",
@@ -822,7 +822,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "B-24,  Royal Indl.estate.",
                         "Address2": " Naigaum X Road,  Wadala",
                         "City": "Mumbai",
@@ -832,7 +832,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "3, 24,  Shreepati Arcade",
                         "Address2": " A K Marg,  Opp Golden Crown Hotel,  August Kranti",
                         "City": "Mumbai",
@@ -842,7 +842,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Shop No-3,  Basant Bhar Building",
                         "Address2": " Juhu Tata Road,  Near Hotel Princess,  Juhu",
                         "City": "Mumbai",
@@ -852,7 +852,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "2 B,  Centre Point",
                         "Address2": " Sv Road,  Santacruz (west)",
                         "City": "Mumbai",
@@ -862,7 +862,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "D-7,  Nav Prabhat Chs",
                         "Address2": " Sant Janabhai Marg,  Vile Parle (e)",
                         "City": "Mumbai",
@@ -872,7 +872,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Shop No 11,  Bldg No B,  Shyam Kamal",
                         "Address2": " Agarwal Market,  Near Rly Station,  Vile Parle(e)",
                         "City": "Mumbai",
@@ -882,7 +882,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Shop No 4,  Samadhan Sadan",
                         "Address2": " Hanuman Road,  Vile Parle (east)",
                         "City": "Mumbai",
@@ -892,7 +892,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "7,  Plot -7",
                         "Address2": " Udyog Ngr,  S V Rd,  Goregaon (west)",
                         "City": "Mumbai",
@@ -902,7 +902,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "1,  Jainson Plaza",
                         "Address2": " S V Rd,  Malad (w)",
                         "City": "Mumbai",
@@ -912,7 +912,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "230/231, 2,  New Sonal Link Indl Est",
                         "Address2": " Link Road,  Opp Movie Time Theater,  Malad (west)",
                         "City": "Mumbai",
@@ -922,7 +922,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Room No.4,  Banarasi Das Mansion",
                         "Address2": " Sivam Shop.centre,  S V Road,  Malad (west)",
                         "City": "Mumbai",
@@ -932,7 +932,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "13,  J S Tower",
                         "Address2": " Opp Veena Sargam, dhanukar Wadi,  Kandivali (west)",
                         "City": "Mumbai",
@@ -942,7 +942,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "6,  Sukan Apts.",
                         "Address2": " M.g. Rd,  Kandivali (west)",
                         "City": "Mumbai",
@@ -952,7 +952,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Shop No 19,  Mahavir Nagar",
                         "Address2": " Dahanukar Wadi,  Kandivli(w)",
                         "City": "Mumbai",
@@ -962,7 +962,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "112/113 East West Ind Est",
                         "Address2": " Saki Naka",
                         "City": "Mumbai",
@@ -972,7 +972,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Milan Shopping Centre",
                         "Address2": " Ghatkopar (west)",
                         "City": "Mumbai",
@@ -982,7 +982,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "C-2 Lic Colony",
                         "Address2": " Gorai",
                         "City": "Mumbai",
@@ -992,7 +992,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "203,  Vaishali Apt",
                         "Address2": " T P S Rd,  Borivali (west)",
                         "City": "Mumbai",
@@ -1002,7 +1002,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "E/8,  Jawan Nagar",
                         "Address2": " S Vivekanand Road,  Borivli (w)",
                         "City": "Mumbai",
@@ -1012,7 +1012,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Ameena Manjil,  Bharam Baug Rd",
                         "Address2": " Jogeshwari (west)",
                         "City": "Mumbai",
@@ -1022,7 +1022,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Shop No 3,  Sec 6",
                         "Address2": " Shantivan Co-op Hsg Soc,  Belapur (cbd),  Navi Mumbai",
                         "City": "Mumbai",
@@ -1032,7 +1032,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "12,  Wafa Co Op Hse",
                         "Address2": " Laxmiben Chhedha Marg,  Shiv Sena Off,  Nalasopara(w)",
                         "City": "Mumbai",
@@ -1042,7 +1042,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "4,  Vasant Vaibhav Bldg",
                         "Address2": " Sivaji Road,  Panvel,  Navi Mumbai",
                         "City": "Mumbai",
@@ -1052,7 +1052,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Plot No 96/97,  Midc Taloja",
                         "Address2": " Taloja",
                         "City": "Mumbai",
@@ -1062,7 +1062,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "P-53,  Midc",
                         "Address2": " Phase I,  Near Ushma Petrol Pump,  Dombivli(e)",
                         "City": "Mumbai",
@@ -1072,7 +1072,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Maharashtra",
+                        "State": "Maharashtra",
                         "Address1": "Deepak Park",
                         "Address2": " Yerwada",
                         "City": "Pune",
@@ -1082,7 +1082,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Tamil Nadu",
+                        "State": "Tamil Nadu",
                         "Address1": "#177, 3rd Floor Smm Centre",
                         "Address2": " Royapettah High Road,  Royapettah",
                         "City": "Chennai",
@@ -1092,7 +1092,7 @@
                 },
                 {
                         "Country": "India",
-                        "State": "\u00c2\u00a0Tamil Nadu",
+                        "State": "Tamil Nadu",
                         "Address1": "84 M S Koil Street",
                         "Address2": " Royapuram",
                         "City": "Chennai",
@@ -4912,13 +4912,13 @@
                 },
                 {
                         "Country": "Canada",
-                        "State": "Ontario",
+                        "State": "Alabama",
                         "Address1": "2357",
                         "Address2": "Main Street",
                         "City": "Toronto",
                         "ZipCode": "M4C1K3",
-                        "First_Name": "Emily",
-                        "Last_Name": "Chen"
+                        "First_Name": "Ethan",
+                        "Last_Name": "Gonzalez"
                 },
                 {
                         "Country": "Canada",
@@ -4952,7 +4952,27 @@
                 },
                 {
                         "Country": "Canada",
+                        "State": "Alabama",
+                        "Address1": "126",
+                        "Address2": "West Court Square",
+                        "City": "Troy",
+                        "ZipCode": "36081",
+                        "First_Name": "Ethan",
+                        "Last_Name": "Gonzalez"
+                },
+                {
+                        "Country": "Canada",
                         "State": "Ontario",
+                        "Address1": "1824",
+                        "Address2": "Yonge Street",
+                        "City": "Ottawa",
+                        "ZipCode": "K1S3H7",
+                        "First_Name": "Natalie",
+                        "Last_Name": "Lee"
+                },
+                {
+                        "Country": "Canada",
+                        "State": "Nova Scotia",
                         "Address1": "1824",
                         "Address2": "Yonge Street",
                         "City": "Ottawa",
@@ -4973,6 +4993,16 @@
                 {
                         "Country": "Canada",
                         "State": "British Columbia",
+                        "Address1": "1403",
+                        "Address2": "Granville Street",
+                        "City": "Vancouver",
+                        "ZipCode": "V6Z1M9",
+                        "First_Name": "Grace",
+                        "Last_Name": "Garcia"
+                },
+                {
+                        "Country": "Canada",
+                        "State": "Ontario",
                         "Address1": "1403",
                         "Address2": "Granville Street",
                         "City": "Vancouver",
