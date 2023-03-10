@@ -62,7 +62,61 @@ def index():
         filteredData[:] = []
         print("length of filter data before : ", len(filteredData))
 
+        if fname:
+            if not filteredData:
+                filteredData += [x for x in selectedCountriesData if x['First_Name'] == fname]
+                print("length after fname if cond: ", len(filteredData))
+            else:
+                filteredData = [x for x in filteredData if x['First_Name'] == fname]
+                print("length after fname else cond: ", len(filteredData))
 
+        if lname:
+            if not filteredData:
+                filteredData += [x for x in selectedCountriesData if x['Last_Name'] == lname]
+                print("length after lname if cond: ", len(filteredData))
+            else:
+                filteredData = [x for x in filteredData if x['Last_Name'] == lname]
+                print("length after lname else cond: ", len(filteredData))
+
+        if address1:
+            if not filteredData:
+                filteredData += [x for x in selectedCountriesData if x['Address1'] == address1]
+                print("length after addr1 if cond: ", len(filteredData))
+            else:
+                filteredData = [x for x in filteredData if x['Address1'] == address1]
+                print("length after addr1 else cond: ", len(filteredData))
+
+        if address2:
+            if not filteredData:
+                filteredData += [x for x in selectedCountriesData if x['Address2'] == address2]
+                print("length after addr2 if cond: ", len(filteredData))
+            else:
+                filteredData = [x for x in filteredData if x['Address2'] == address2]
+                print("length after addr2 else cond: ", len(filteredData))
+
+        if city:
+            if not filteredData:
+                filteredData += [x for x in selectedCountriesData if x['City'] == city]
+                print("length after city if cond: ", len(filteredData))
+            else:
+                filteredData = [x for x in filteredData if x['City'] == city]
+                print("length after city else cond: ", len(filteredData))
+
+        if state:
+            if not filteredData:
+                filteredData += [x for x in selectedCountriesData if x['State'] == state]
+                print("length after state if cond: ", len(filteredData))
+            else:
+                filteredData = [x for x in filteredData if x['State'] == state]
+                print("length after state else cond: ", len(filteredData))
+
+        if code:
+            if not filteredData:
+                filteredData += [x for x in selectedCountriesData if x['ZipCode'] == code]
+                print("length after code if cond: ", len(filteredData))
+            else:
+                filteredData = [x for x in filteredData if x['ZipCode'] == code]
+                print("length after code else cond: ", len(filteredData))
 
         print("filtered data  : ", len(filteredData))
         form_data = request.form
