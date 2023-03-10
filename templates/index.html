@@ -6,6 +6,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      th, td {
+        border: 1px solid #ddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+
 </head>
  
 <body>
@@ -22,28 +43,36 @@
     <div class="container">
         <div class="jumbotron">
             <h1>Country Specific Search</h1><br>
-            <form action="{{ form_action_url }}" method="post">
+<!--            <form action="{{ form_action_url }}" method="post">-->
+            <form method="POST">
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="US">
-                    <label class="form-check-label" for="US">USA</label>
+                    <input type="checkbox" class="form-check-input" id="United States of America" name="countryUSA" value={{ usa }}>
+                    <label class="form-check-label" for="United States of America">United States of America</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="Canada" name="countryCanada" value="Canada">
+                    <label class="form-check-label" for="Canada">Canada</label>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="Name" name="name" placeholder="Enter name">
+                    <input type="text" class="form-control" placeholder="Enter first name" id="fname" name="fname" value= {{ fname }} >
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="address1" name="address1" placeholder="Street/Building/Address Line1">
+                    <input type="text" class="form-control" placeholder="Enter last name" id="lname" name="lname" value= {{ lname }} >
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="address2" name="address2" placeholder="Apt/Suite/Address Line2">
+                    <input type="text" class="form-control" placeholder="Street/Building/Address Line1" id="address1" name="address1" value="{{ address1 }}">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="state" name="state" placeholder="Zone/Province/State">
+                    <input type="text" class="form-control" id="address2" name="address2" placeholder="Apt/Suite/Address Line2" value="{{ address2 }}">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="city" name="city" placeholder="City/Town/Locality">
+                    <input type="text" class="form-control" id="city" name="city" placeholder="City/Town/Locality" value={{ city }}>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="code" name="code" placeholder="Zip/Postal Code">
+                    <input type="text" class="form-control" id="state" name="state" placeholder="Zone/Province/State" value="{{ state }}">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="code" name="code" placeholder="Zip/Postal Code" value={{ code }}>
                 </div>
                 <button type="submit" class="btn btn-primary">Search</button>
             </form>
@@ -51,8 +80,66 @@
  
         <footer class="footer">
         </footer>
- 
     </div>
+
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address Line1</th>
+        <th>Address Line2</th>
+        <th>City/Town/Locality</th>
+        <th>Zone/Province/State</th>
+        <th>Country</th>
+        <th>Zip/Postal Code</th>
+        <th>Select</th>
+      </tr>
+      {% for address in data %}
+        <tr>
+          <td id="firstName">{{ address.First_Name }}</td>
+          <td>{{ address.Last_Name }}</td>
+          <td>{{ address.Address1 }}</td>
+          <td>{{ address.Address2 }}</td>
+          <td>{{ address.City }}</td>
+          <td>{{ address.State }}</td>
+          <td>{{ address.Country }}</td>
+          <td>{{ address.ZipCode }}</td>
+          <td>
+              <button class="btn btn-primary" id="selectButton" onclick="sampleFunction(this);">Select</button>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+
+
+<script>
+    function sampleFunction(el) {
+        console.log("in function")
+        let row = el.closest('tr');
+        console.log(row.cells[0].textContent);
+        document.getElementById("fname").value = row.cells[0].textContent;
+        document.getElementById("lname").value = row.cells[1].textContent;
+        document.getElementById("address1").value = row.cells[2].textContent;
+        document.getElementById("address2").value = row.cells[3].textContent;
+        document.getElementById("city").value = row.cells[4].textContent;
+        document.getElementById("state").value = row.cells[5].textContent;
+        document.getElementById("code").value = row.cells[7].textContent;
+
+        console.log(document.getElementById("firstName").value);
+
+        if(row.cells[6].textContent == "United States of America") {
+            document.getElementById("United States of America").checked = true;
+        }
+
+        if(row.cells[6].textContent == "Canada"){
+            document.getElementById("Canada").checked = true;
+        }
+
+        alert("Confirm the Selection");
+        row.cells[0] = "";
+    }
+</script>
+
 </body>
  
 </html>
