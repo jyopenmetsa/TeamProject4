@@ -5,6 +5,10 @@ import json
 # initialize the flask and SQL Objects
 app = Flask(__name__, template_folder='templates')
 
+message_404 = {
+    "status": 404,
+    "message": "Country not in list usa,canada,mexico,india,japan"
+}
 
 # define methods for routes (what to do and display)
 # @app.route("/")
