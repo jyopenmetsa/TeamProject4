@@ -5,9 +5,11 @@ import json
 # initialize the flask and SQL Objects
 app = Flask(__name__, template_folder='templates')
 
+fullCountryList = ["usa","canada","mexico","india","japan"]
+
 message_404 = {
         "status": 404,
-        "message": "Country not in list usa,canada,mexico,india,japan"
+        "message": "Invalid address"
     }
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -50,6 +52,9 @@ def filterData(usa, canada, mexico, india, japan, fname, lname, address1, addres
 
     print("canada : ", canada)
     print("usa : ", usa)
+    print("india : ", india)
+    print("mexico : ", mexico)
+    print("japan : ", japan)
     print("state : ", state)
     print("address1 : ", address1)
     print("address2 : ", address2)
@@ -141,26 +146,28 @@ def filter():
     # canada = request.args.get('canada')
     usa = canada = mexico = india = japan = None
     country = request.args.get('country')
+    countryList = request.args.get('country').split(',')
+    print(countryList)
 
     message_404_json = json.dumps(message_404)
 
-    if country not in ["usa","canada","mexico","india","japan"]:
+    if not set(countryList).issubset(fullCountryList):
         print("not in list")
         return message_404_json
 
-    if country == "usa":
+    if "usa" in countryList:
         usa = "on"
 
-    if country == "canada":
+    if "canada" in countryList:
         canada = "on"
 
-    if country == "mexico":
+    if "mexico" in countryList:
         mexico = "on"
 
-    if country == "india":
-        india == "on"
+    if "india" in countryList:
+        india = "on"
 
-    if country == "japan":
+    if "japan" in countryList:
         japan = "on"
 
     fname = request.args.get('fname')
