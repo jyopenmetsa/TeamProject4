@@ -5,14 +5,20 @@ import json
 # initialize the flask and SQL Objects
 app = Flask(__name__, template_folder='templates')
 
-
+message_404 = {
+        "status": 404,
+        "message": "Country not in list usa,canada,mexico,india,japan"
+    }
 @app.route('/', methods=['GET', 'POST'])
 def index():
     print("in index def")
 
     if request.method == 'POST':
-        usa = request.form.get('countryUSA')
-        canada = request.form.get('countryCanada')
+        usa = request.form.get('USA')
+        canada = request.form.get('Canada')
+        mexico = request.form.get('Mexico')
+        india = request.form.get('India')
+        japan = request.form.get('Japan')
         fname = request.form.get('fname')
         lname = request.form.get('lname')
         address1 = request.form.get('address1')
@@ -21,7 +27,7 @@ def index():
         state = request.form.get('state')
         code = request.form.get('code')
 
-        filteredData = filterData(usa, canada, fname, lname, address1, address2, city, state, code)
+        filteredData = filterData(usa, canada, mexico, india, japan, fname, lname, address1, address2, city, state, code)
 
         print("filtered data  : ", len(filteredData))
         form_data = request.form
@@ -35,7 +41,7 @@ def index():
                            state=state, city=city, code=code)
 
 
-def filterData(usa, canada, fname, lname, address1, address2, city, state, code):
+def filterData(usa, canada, mexico, india, japan, fname, lname, address1, address2, city, state, code):
     print("in filterData method")
     print(fname,lname,address1,address2,city,state,code)
     f = open('./data/TP_data1.json')
@@ -54,6 +60,12 @@ def filterData(usa, canada, fname, lname, address1, address2, city, state, code)
         selectedCountriesData += [x for x in countriesData if x['Country'] == 'United States of America']
     if canada is not None:
         selectedCountriesData += [x for x in countriesData if x['Country'] == 'Canada']
+    if mexico is not None:
+        selectedCountriesData += [x for x in countriesData if x['Country'] == 'Mexico']
+    if india is not None:
+        selectedCountriesData += [x for x in countriesData if x['Country'] == 'India']
+    if japan is not None:
+        selectedCountriesData += [x for x in countriesData if x['Country'] == 'Japan']
 
     print(len(selectedCountriesData))
 
@@ -127,8 +139,15 @@ def filter():
 
     # usa = request.args.get('usa')
     # canada = request.args.get('canada')
-    usa, canada, mexico, india, japan = None
+    usa = canada = mexico = india = japan = None
     country = request.args.get('country')
+
+    message_404_json = json.dumps(message_404)
+
+    if country not in ["usa","canada","mexico","india","japan"]:
+        print("not in list")
+        return message_404_json
+
     if country == "usa":
         usa = "on"
 
@@ -154,7 +173,7 @@ def filter():
 
     print(fname, lname, address1, address2, city, state, code)
 
-    filteredData = filterData(usa, canada, fname, lname, address1, address2, city, state, code)
+    filteredData = filterData(usa, canada, mexico, india, japan, fname, lname, address1, address2, city, state, code)
 
     return filteredData
 

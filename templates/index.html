@@ -62,28 +62,27 @@
     </div>
     <div class="container">
         <div class="jumbotron">
-<!--            <form action="{{ form_action_url }}" method="post">-->
             <form method="POST">
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="United States of America" name="countryUSA" value={{ usa }}>
-                    <label class="form-check-label" for="United States of America">United States of America</label>
+                    <input type="checkbox" class="form-check-input" id="us" name="USA">
+                    <label class="form-check-label" for="us">United States of America</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="Canada" name="countryCanada" value="Canada">
-                    <label class="form-check-label" for="Canada">Canada</label>
+                    <input type="checkbox" class="form-check-input" id="ca" name="Canada">
+                    <label class="form-check-label" for="ca">Canada</label>
                 </div>
 
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="ID" name="ID">
-                    <label class="form-check-label" for="ID">India</label>
+                    <input type="checkbox" class="form-check-input" id="ind" name="India">
+                    <label class="form-check-label" for="ind">India</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="Ja" name="Ja">
+                    <input type="checkbox" class="form-check-input" id="ja" name="Japan">
                     <label class="form-check-label" for="Ja">Japan</label>
                 </div>
 
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="mx" name="mx">
+                    <input type="checkbox" class="form-check-input" id="mx" name="Mexico">
                     <label class="form-check-label" for="mx">Mexico</label>
                 </div>
                 </div>
@@ -111,9 +110,6 @@
                 <button type="submit" class="btn btn-primary">Search</button>
             </form>
         </div>
- 
-        <footer class="footer">
-        </footer>
     </div>
 
     <br>
@@ -171,11 +167,11 @@
             document.getElementById("ca").checked = true;
         }
         if (row.cells[6].textContent == "India") {
-            document.getElementById("ID").checked = true;
+            document.getElementById("ind").checked = true;
         }
 
         if (row.cells[6].textContent == "Japan") {
-            document.getElementById("Ja").checked = true;
+            document.getElementById("ja").checked = true;
         }
         if (row.cells[6].textContent == "Mexico") {
             document.getElementById("mx").checked = true;
