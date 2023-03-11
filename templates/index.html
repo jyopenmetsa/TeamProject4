@@ -5,59 +5,94 @@
     <title>Python Flask Bucket List App</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-
     <style>
+    body {
+        text-align: left; /* set the text alignment to left */
+    }
+
+    .container {
+        max-width: 800px; /* set the maximum width of the container */
+        margin: 0 auto; /* center the container horizontally */
+        padding: 20px; /* add some padding to the container */
+        background-color: #ADD8E6; /* replace with the color of your choice */
+    }
+
       table {
         border-collapse: collapse;
-        width: 100%;
+        width: 50%;
         margin-bottom: 20px;
+        margin: 0 auto;
+        background-color: #ADD8E6;
       }
 
       th, td {
         border: 1px solid #ddd;
-        text-align: left;
-        padding: 8px;
+        text-align: center;
+        padding: 6px;
       }
 
       th {
-        background-color: #f2f2f2;
+        background-color: #ADD8E6;
       }
+      td{
+        background-color: #f2f2f2;
+        }
+      body {
+      background-image: url('https://images.unsplash.com/photo-1521575107034-e0fa0b594529?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=868&q=80');
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+
     </style>
 
 </head>
- 
+
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <h3 class="navbar-brand">Address Formatter</h3>
+            <h3 class="navbar-brand">ADDRESS FINDER</H3>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </nav>
     </div>
-
-
     <div class="container">
         <div class="jumbotron">
-            <h1>Country Specific Search</h1><br>
 <!--            <form action="{{ form_action_url }}" method="post">-->
-            <form method="POST">
+        <form method="POST">
+
+                <div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="United States of America" name="countryUSA" value={{ usa }}>
-                    <label class="form-check-label" for="United States of America">United States of America</label>
+                    <input type="checkbox" class="form-check-input" id="us" name="us">
+                    <label class="form-check-label" for="us">USA</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="ca" name="ca">
+                    <label class="form-check-label" for="ca">Canada</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="ID" name="ID">
+                    <label class="form-check-label" for="ID">India</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="Canada" name="countryCanada" value="Canada">
-                    <label class="form-check-label" for="Canada">Canada</label>
+                    <input type="checkbox" class="form-check-input" id="Ja" name="Ja">
+                    <label class="form-check-label" for="Ja">Japan</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="mx" name="mx">
+                    <label class="form-check-label" for="mx">Mexico</label>
+                </div>
+                </div>
+                <BR>            <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter first name" id="fname" name="fname" value={{ fname }}>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter first name" id="fname" name="fname" value= {{ fname }} >
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter last name" id="lname" name="lname" value= {{ lname }} >
+                    <input type="text" class="form-control" placeholder="Enter last name" id="lname" name="lname" value={{ lname }}>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Street/Building/Address Line1" id="address1" name="address1" value="{{ address1 }}">
@@ -75,13 +110,14 @@
                     <input type="text" class="form-control" id="code" name="code" placeholder="Zip/Postal Code" value={{ code }}>
                 </div>
                 <button type="submit" class="btn btn-primary">Search</button>
-            </form>
+        </form>
         </div>
- 
+
         <footer class="footer">
         </footer>
     </div>
 
+    <br>
     <table>
       <tr>
         <th>First Name</th>
@@ -125,15 +161,27 @@
         document.getElementById("state").value = row.cells[5].textContent;
         document.getElementById("code").value = row.cells[7].textContent;
 
-        console.log(document.getElementById("firstName").value);
+
 
         if(row.cells[6].textContent == "United States of America") {
-            document.getElementById("United States of America").checked = true;
+            document.getElementById("us").checked = true;
         }
 
         if(row.cells[6].textContent == "Canada"){
-            document.getElementById("Canada").checked = true;
+            document.getElementById("ca").checked = true;
         }
+        if (row.cells[6].textContent == "India") {
+            document.getElementById("ID").checked = true;
+        }
+
+        if (row.cells[6].textContent == "Japan") {
+            document.getElementById("Ja").checked = true;
+        }
+        if (row.cells[6].textContent == "Mexico") {
+            document.getElementById("mx").checked = true;
+        }
+
+
 
         alert("Confirm the Selection");
         row.cells[0] = "";
