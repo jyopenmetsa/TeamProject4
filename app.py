@@ -125,7 +125,7 @@ def index():
         filteredData = []
         form_data = {}
     return render_template('index.html', data=filteredData, form=form_data,
-                           usa=usa, fname=fname, lname=lname,
+                           fname=fname, lname=lname,
                            address1=address1, address2=address2,
                            state=state, city=city, code=code)
 
