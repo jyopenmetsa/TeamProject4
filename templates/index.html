@@ -46,11 +46,11 @@
 <!--            <form action="{{ form_action_url }}" method="post">-->
             <form method="POST">
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="United States of America" name="countryUSA" value={{ usa }}>
+                    <input type="checkbox" class="form-check-input" id="United States of America" name="countryUSA">
                     <label class="form-check-label" for="United States of America">United States of America</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="Canada" name="countryCanada" value="Canada">
+                    <input type="checkbox" class="form-check-input" id="Canada" name="countryCanada">
                     <label class="form-check-label" for="Canada">Canada</label>
                 </div>
                 <div class="form-group">
@@ -117,6 +117,7 @@
         console.log("in function")
         let row = el.closest('tr');
         console.log(row.cells[0].textContent);
+        alert("confirm the selection");
         document.getElementById("fname").value = row.cells[0].textContent;
         document.getElementById("lname").value = row.cells[1].textContent;
         document.getElementById("address1").value = row.cells[2].textContent;
@@ -125,18 +126,14 @@
         document.getElementById("state").value = row.cells[5].textContent;
         document.getElementById("code").value = row.cells[7].textContent;
 
-        console.log(document.getElementById("firstName").value);
-
         if(row.cells[6].textContent == "United States of America") {
+            alert("USA");
             document.getElementById("United States of America").checked = true;
         }
 
         if(row.cells[6].textContent == "Canada"){
             document.getElementById("Canada").checked = true;
         }
-
-        alert("Confirm the Selection");
-        row.cells[0] = "";
     }
 </script>
 
