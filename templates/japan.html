@@ -63,30 +63,9 @@
     <div class="container">
         <div class="jumbotron">
             <form method="POST">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="us" name="USA">
-                    <label class="form-check-label" for="us"><a href="usa">United States of America</a></label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="ca" name="Canada">
-                    <label class="form-check-label" for="ca"><a href="canada">Canada</a></label>
-                </div>
 
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="ind" name="India">
-                    <label class="form-check-label" for="ind"><a href="india">India</a></label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="ja" name="Japan">
-                    <label class="form-check-label" for="Ja"><a href="japan">Japan</a></label>
-                </div>
-
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="mx" name="Mexico">
-                    <label class="form-check-label" for="mx"><a href="mexico">Mexico</a></label>
-                </div>
-                </div>
-                <BR>            <div class="form-group">
+                <p>Japan</p>
+                <div class="form-group">
                     <input type="text" class="form-control" placeholder="Enter first name" id="fname" name="fname" value={{ fname }}>
                 </div>
                 <div class="form-group">
@@ -98,14 +77,20 @@
                 <div class="form-group">
                     <input type="text" class="form-control" id="address2" name="address2" placeholder="Apt/Suite/Address Line2" value="{{ address2 }}">
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="city" name="city" placeholder="City/Town/Locality" value={{ city }}>
+<!--                <div class="form-group">-->
+<!--                    <input type="text" class="form-control" id="city" name="city" placeholder="City/Town/Locality" value={{ city }}>-->
+<!--                </div>-->
+                <div id="select-container">
+                    <select id="city" name="city" placeholder="City/Town/Locality">
+                        <option value="" disabled selected hidden>Choose a city</option>
+                        {% for option in options %}
+                            <option value="{{ option }}">{{ option }}</option>
+                        {% endfor %}
+                    </select>
                 </div>
+                <br>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="state" name="state" placeholder="Zone/Province/State" value="{{ state }}">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="code" name="code" placeholder="Zip/Postal Code" value={{ code }}>
+                    <input type="text" class="form-control" id="code" name="code" placeholder="Postal Code" value={{ code }}>
                 </div>
                 <button type="submit" class="btn btn-primary">Search</button>
             </form>
@@ -120,7 +105,6 @@
         <th>Address Line1</th>
         <th>Address Line2</th>
         <th>City/Town/Locality</th>
-        <th>Zone/Province/State</th>
         <th>Country</th>
         <th>Zip/Postal Code</th>
         <th>Select</th>
@@ -132,7 +116,6 @@
           <td>{{ address.Address1 }}</td>
           <td>{{ address.Address2 }}</td>
           <td>{{ address.City }}</td>
-          <td>{{ address.State }}</td>
           <td>{{ address.Country }}</td>
           <td>{{ address.ZipCode }}</td>
           <td>
@@ -154,28 +137,8 @@
         document.getElementById("address1").value = row.cells[2].textContent;
         document.getElementById("address2").value = row.cells[3].textContent;
         document.getElementById("city").value = row.cells[4].textContent;
-        document.getElementById("state").value = row.cells[5].textContent;
-        document.getElementById("code").value = row.cells[7].textContent;
+        document.getElementById("code").value = row.cells[6].textContent;
 
-
-
-        if(row.cells[6].textContent == "United States of America") {
-            document.getElementById("us").checked = true;
-        }
-
-        if(row.cells[6].textContent == "Canada"){
-            document.getElementById("ca").checked = true;
-        }
-        if (row.cells[6].textContent == "India") {
-            document.getElementById("ind").checked = true;
-        }
-
-        if (row.cells[6].textContent == "Japan") {
-            document.getElementById("ja").checked = true;
-        }
-        if (row.cells[6].textContent == "Mexico") {
-            document.getElementById("mx").checked = true;
-        }
     }
 </script>
 
